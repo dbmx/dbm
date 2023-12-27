@@ -18,13 +18,13 @@ def user(name):
 # Create Custom Error Pages
 
 
-# Invaild URL
+# Invaild URL - Fixed.
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
 
 
-# Invaild Server Error
+# Invaild Server Error - Fixed.
 @app.errorhandler(500)
 def page_not_found(e):
     return render_template("500.html"), 500
